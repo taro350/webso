@@ -8,7 +8,7 @@ import (
 
 	// "webso/go_sys/con_config"
 
-	"github.com/google/uuid"
+	// "github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
 )
@@ -25,17 +25,17 @@ func handleAPI(w http.ResponseWriter, r *http.Request) {
 		return // connection doesn't exist so exit from handling
 	}
 
-	id, err := uuid.NewRandom()
-	if err != nil {
-		fmt.Print("UUID error occurs.", err)
-	}
+	// id, err := uuid.NewRandom()
+	// if err != nil {
+	// 	fmt.Print("UUID error occurs.", err)
+	// }
 
-	c.Uuid = "ws-" + id.String()
+	// c.Uuid = "ws-" + id.String()
 
-	fmt.Println(c.Uuid)
+	// fmt.Println(c.Uuid)
 
 	// send data to clients
-	con_data.SendMsg("^Av", "client-websocket-id", c.Uuid, *c)
+	// con_data.SendMsg("^Av", "client-websocket-id", c.Uuid, *c)
 
 Loop:
 	for {
