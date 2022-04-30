@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"net/http"
-	"shiki/go_sys/con_data"
+	"webso/con_data"
 
 	// "webso/go_sys/con_config"
 
